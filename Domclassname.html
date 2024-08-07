@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom ClassName</title>
+</head>
+<body>
+    <h1 class="head">Hello one</h1>
+    <p class="head1">this p tag</p>
+    <h3 class="head2">this is h tag</h3>
+    <p class="head1">this is another p tag</p>
+    <h5 class="head1"> this is h5 tag</h5>
+</body>
+</html>
+<script>
+    let cls = document.getElementsByClassName("head1");
+    console.log(cls);
+    //console.log(cls[0]);
+    for(let i=0;i<cls.length;i++){
+        console.log(cls[i]);
+    }
+    let tag = document.getElementsByClassName("head1");
+    console.log(tag);
+    tag[1].style.color="red";
+    tag[1].style.fontSize="60px";
+</script>
