@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Alert</title>
+</head>
+<body>
+    <input type="text" id="name"/>
+    <select id="gender">
+        <option value="">-----</option>
+        <option value="male">M</option>
+        <option value="female">F</option>
+    </select><br>
+    <input type="email" name="email" id="email">
+    <br>
+    <input type="number" name="mobile" id="mobile"><br>
+    <hr>
+    <button onclick="showName()">Name</button>
+    <button onclick="showGender()">Gender</button>
+    <button onclick="showEmail()">Email</button>
+    <button onclick="showNumber()">Number</button>
+</body>
+</html>
+<script>
+    function showName(){
+        alert(document.getElementById("name").value);
+    }
+    function showGender(){
+        alert(document.getElementById("gender").value);
+    }
+    function showEmail(){
+        alert(document.getElementById("email").value);
+    }
+    function showNumber(){
+        alert(document.getElementById("mobile").value);
+    }
+</script>
