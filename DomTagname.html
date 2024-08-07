@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom TagName</title>
+</head>
+<body>
+    <h1>Hello one</h1>
+    <p>this p tag</p>
+    <h3>this is h tag</h3>
+    <p>this is another p tag</p>
+    <h5>this is h5 tag</h5>
+</body>
+</html>
+<script>
+    let cls = document.getElementsByTagName("h1");
+    console.log(cls);
+    //console.log(cls[0]);
+    for(let i=0;i<cls.length;i++){
+        console.log(cls[i]);
+    }
+    let tag = document.getElementsByTagName("h5");
+    console.log(tag);
+    tag[0].style.color="blue";
+    tag[0].style.fontSize="60px";
+</script>
